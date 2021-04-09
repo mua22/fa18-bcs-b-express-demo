@@ -9,6 +9,6 @@ app.get("/api/customers", function (req, res) {
   return res.send(["Noman", "Ali", "Kamran"]);
 });
 
-app.listen(4000, function () {
+app.listen(process.env.PORT || 4000, function () {
   console.log(`Listening on Port 4000....`);
 });
